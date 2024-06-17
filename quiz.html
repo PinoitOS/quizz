@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pregunta <span id="question-number">1</span></h2>
+        <p id="question-text"></p>
+        <form id="quiz-form">
+            <input type="radio" name="answer" value="0" id="answer0"><label for="answer0"></label><br>
+            <input type="radio" name="answer" value="1" id="answer1"><label for="answer1"></label><br>
+            <input type="radio" name="answer" value="2" id="answer2"><label for="answer2"></label><br>
+            <input type="radio" name="answer" value="3" id="answer3"><label for="answer3"></label><br>
+            <button type="button" onclick="submitAnswer()">Siguiente</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
